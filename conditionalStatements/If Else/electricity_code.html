@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // electricity code 
+        let x = 0;
+        let u = 50;
+        if (u <= 100) {
+            x = (u * 1.25)
+        } else if (u > 100 && u <= 200) {
+            x = (100 * 1.25) + (u - 100) * 1.50
+        } else {
+            x = (100 * 1.25) + (100 * 1.50) + (u - 100) * 1.50
+        }
+        console.log(x)
+        // end 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // difference btw var nd let
+        // var type
+        var x = 20;
+        console.log("before if ", x)
+        if (true) {
+            var x = 50;
+            console.log("inside if ", x)
+        }
+        console.log("after if ", x)
+
+
+        // let type
+        let x = 20;
+        console.log("before if ", x)
+        if (true) {
+            let x = 50;
+            console.log("inside if ", x)
+        }
+        console.log("after if ", x)
+    </script>
+</body>
+
+</html>
