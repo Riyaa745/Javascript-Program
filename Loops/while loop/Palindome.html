@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome number(while loop)</title>
+</head>
+<body>
+    <script>
+        // program on plaindrome number using while loop
+        let x = 121;
+        r = 0;
+        rev = 0;
+        orig = x;
+        while (x != 0) {
+            r = parseInt(x % 10)
+            x = parseInt(x / 10)
+            rev = rev * 10 + r
+            console.log("remainder",r,"\n")
+            console.log(x)
+        }
+        if (orig == rev) {
+            console.log("Palindrome number")
+        } else {
+            console.log("not a palindrome number")
+        }
+    </script>
+</body>
+</html>

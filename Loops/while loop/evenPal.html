@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evenpal(while loop)</title>
+</head>
+
+<body>
+    <script>
+        // program on evenpla using while loop
+        // evenpal means a given number will be palindrome + their individual sum should be even
+
+        
+        let x = 143;
+        r = 0;
+        rev = 0;
+        sum = 0;
+        orig = x;
+        while (x != 0) {
+            r = parseInt(x % 10);
+            x = parseInt(x / 10);
+            sum = sum + r;
+            rev = rev * 10 + r;
+            console.log("rem", r);
+            console.log(x);
+        }
+        if (orig == rev && sum % 2 == 0) {
+            console.log("evenpal")
+        } else {
+            console.log("not")
+        }
+    </script>
+</body>
+
+</html>
