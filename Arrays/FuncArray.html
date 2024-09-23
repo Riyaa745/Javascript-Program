@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methods in Array</title>
+</head>
+
+<body>
+    <script>
+
+        // forEach array 
+        const arr = [10, "hello", 25, "bye"];
+        arr.forEach(arr1 => console.log(arr));
+
+        // map()
+        const no = [1, 2, 3, 4, 5, "riya"];
+        // storing output in a new var
+        // let double= no.map(num=>num*2);
+        // console.log(double);
+        console.log(no.map(num => num * 2));
+
+        // filter()
+        const num1 = [1, 2, 3, 4, 5, 6];
+        // direect print
+        num1.filter((num) => console.log(num % 2 == 0));
+        console.log(num1.length)
+        console.log(num1.length - 1)
+
+        // concat()
+        const array1 = ['a', 'b', 'c']
+        const array2 = ['d', 'e', 'f']
+        const array3 = array1.concat(array2);
+        console.log(array3);
+
+        // find()
+        const array = [12, 2, 25, 50, 160];
+        const found = array.find((element) => element > 10);
+        console.log(found);
+
+        // findIndex
+        const a = [20, 1, 36, 15, 41];
+        const b = a.findIndex((element) => (element > 20));
+        console.log(b)
+
+        // includes() 
+        const num = [1, 2, 3, 4];
+        console.log(num.includes(2));
+
+        // indexOf()
+        const animal = ['cat', 'dog', 'tiger']
+        console.log(animal.indexOf('butterfly'))
+        // output:-1 becoz butterfly is not  in the array
+        console.log(animal.indexOf('cat'))
+
+        // sort() 
+        const months = ['jan', 'march', 'oct', 'feb']
+        console.log(months.sort())
+        // console.log(months)
+
+        // reverse() 
+        const name = ['riya', 'vikas', 'deepak', 'meenu']
+        const reversed = name.reverse()
+        console.log(reversed)
+        // console.log( name.reverse())
+
+        // reduced
+        const sum = [1, 2, 5, 6, 4]
+        const result = sum.reduce((a, c) => a + c, 0)
+        console.log(result)
+        // console.log( sum.reduce((a,c)=>a+c, 0)) direct print
+
+        // pop()  [remove element from the end of tha array]
+        const out = [12, 5, 2];
+        out.pop();
+        console.log(out)
+
+        // push() [add a element in the end of a array]
+        const add = ["riya", 25, "vikas"];
+        add.push(20);
+        console.log(add)
+
+        // shift()
+        const X = [25, 12, 26]
+        X.shift()
+        console.log(X)
+
+        // unshift()
+        const Y = [1, 2, 3,]
+        Y.unshift(4)
+        console.log(Y)
+
+        // slice()
+
+
+
+        // splice() 
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

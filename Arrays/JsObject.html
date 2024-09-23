@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+</head>
+
+<body>
+    <!-- JavaScript Objects -->
+    <script>
+        // javascript array
+        const x = [10, "Shubham", 40.06, true];
+
+        // printing array with particular index
+        console.log(x[1])
+
+        // printing whole array
+        console.log(x)
+
+        // js object
+        const students = {
+            name: "Riya",
+            age: 21,
+            course: ["BCA", "MCA", "Btech"],
+            isPass: true,
+            image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            Address: {
+                Street: "Ramgarh",
+                pincode: 248197,
+            }
+        }
+
+         console.log("JS Object : ",students["age"])
+         console.log("JS Object : ",students.name)
+         console.log("JS Object : ",students.course[1])
+         console.log("JS Object : ",students.Address.Street)
+         console.log("JS Object : ",students.Address["pincode"])
+
+
+        // javascript object inside array
+        const students1 = [
+            {
+                name: "Riya",
+                age: 21,
+                course: ["BCA", "MCA", "Btech"],
+                isPass: true,
+                image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+                Address: {
+                    Street: "Ramgarh",
+                    pincode: 248197,
+                }
+            },
+
+            {
+                name: "Vikas",
+                age: 21,
+                course: ["Bcom", "Mcom", "Bca"],
+                isPass: true,
+                image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+                Address: {
+                    Street: "Sherpur",
+                    pincode: 248001,
+                }
+            },
+
+            {
+                name: "Priya",
+                age: 22,
+                course: ["BBA", "MBA", "MCA"],
+                isPass: true,
+                image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+                Address: {
+                    Street: "Patelnagar",
+                    pincode: 248001,
+                }
+            }
+
+        ]
+        
+        // printing whole array
+        console.log("JS Array:", students1)
+        // printing a array through index number
+        console.log("JS Array:", students1[0])
+        // printing a object inside of an array
+        console.log("JS Array:", students1[1].name)
+        console.log("JS Array:", students1[1].image)
+        // array=>object=>print(array)
+        console.log("JS Array:", students1[2].course[1])
+
+
+
+    </script>
+
+</body>
+
+</html>
