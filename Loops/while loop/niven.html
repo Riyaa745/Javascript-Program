@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niven Number Program</title>
+</head>
+
+<body>
+    <script>
+        // program on niven number
+        let x = 12;
+        let r = 0;
+        let sum = 0;
+        const orig = x;
+        while (x != 0) {
+            r = x % 10;
+            x = parseInt(x / 10);
+            sum = sum + r;
+        }
+        console.log(sum);
+        if (orig % sum == 0) {
+            console.log("niven number")
+        } else {
+            console.log("not niven number")
+        }
+    </script>
+</body>
+
+</html>
