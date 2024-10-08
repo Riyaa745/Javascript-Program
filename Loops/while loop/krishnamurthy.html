@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peterson number </title>
+
+</head>
+
+<body>
+    <script>
+        let x = 145;
+        let r = 0;
+        orig = x;
+        sum=0;
+        while (x!= 0) {
+          r=parseInt(x%10);
+          let fact=1;
+          for(let i=1;i<=r;i++){
+            fact= fact*i;
+            // console.log(fact);
+          }
+          sum= sum + fact;
+          // console.log(sum);
+          x=parseInt(x/10);
+        }
+
+        if(sum==orig){
+          console.log("peterson number")
+        }else{
+          console.log("Not peterson number")
+        }
+        // console.log(sum);
+    </script>
+
+</body>
+
+</html>
